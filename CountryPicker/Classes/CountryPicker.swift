@@ -241,14 +241,14 @@ public class CountryPicker: UIPickerView, UIPickerViewDelegate, UIPickerViewData
     
     @objc
     func pickerTapped(tapRecognizer: UITapGestureRecognizer) {
-        if (tapRecognizer.state == .ended) {
-            let rowHeight: CGFloat = self.rowSize(forComponent: 0).height
-            let selectedRowFrame: CGRect = self.bounds.insetBy(dx: 0, dy: (self.frame.height - rowHeight) / 2.0)
-            let userTappedOnSelectedRow = selectedRowFrame.contains(tapRecognizer.location(in: self))
-            if (userTappedOnSelectedRow) {
-                _ = self.pickerView(self, didSelectRow: self.selectedRow(inComponent: 0), inComponent: 0)
-            }
-        }
+//        if (tapRecognizer.state == .ended) {
+//            let rowHeight: CGFloat = self.rowSize(forComponent: 0).height
+//            let selectedRowFrame: CGRect = self.bounds.insetBy(dx: 0, dy: (self.frame.height - rowHeight) / 2.0)
+//            let userTappedOnSelectedRow = selectedRowFrame.contains(tapRecognizer.location(in: self))
+//            if (userTappedOnSelectedRow) {
+//                _ = self.pickerView(self, didSelectRow: self.selectedRow(inComponent: 0), inComponent: 0)
+//            }
+//        }
     }
     
     public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool{
